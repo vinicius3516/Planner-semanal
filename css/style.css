@@ -222,94 +222,78 @@ select {
 }
 
 /* Tabllet */
-
-@media screen and (max-width: 1000px) {
-  body {
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 1.5rem; /* Reduzindo a margem lateral para telas menores */
   }
 
-  .container {
-    padding: 2rem;
-
-    & h1 {
-      font-size: 60px;
-    }
+  .container-azul{
+    text-align: center;
   }
 
   .containe-wheit {
-    width: 100%;
-    margin: auto 2rem;
+    width: 80%; /* Ajustando a largura do container branco */
+    margin: 0; /* Removendo a margem para centralizar melhor */
+  }
+
+  .todo-container {
+    padding: 1.5rem 2rem; /* Ajustando o padding para telas menores */
+    margin: 1rem 0; /* Ajustando a margem */
+  }
+
+  #search,
+  #filter {
+    width: 100%; /* Ajustando o tamanho dos elementos de busca e filtro */
+    margin-right: 0; /* Removendo a margem direita */
+    margin-bottom: 1rem; /* Adicionando espaço entre os elementos */
+  }
+
+  #todo-list {
+    max-height: 200px; /* Reduzindo a altura máxima da lista */
   }
 }
 
 /* Celular */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 480px) {
   body {
-    padding: 70px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0.5rem; /* Reduzindo o padding do body */
+  }
+
+  .container-azul{
+    text-align: center;
   }
 
   .container {
-    padding: 1rem;
-
-    & h1 {
-      font-size: 30px;
-    }
+    margin: 0 0.5rem; /* Reduzindo a margem lateral */
   }
 
   .containe-wheit {
-    width: 100%;
-    height: 100%;
-    margin: auto 2rem;
-    padding: 0 0 1rem;
+    width: 95%; /* Ajustando a largura do container branco */
   }
 
   .todo-container {
-    width: 100%;
-    margin-top: -5rem;
-    background-color: #fdfdfd;
-    padding: 2rem 1rem;
-    border-radius: 15px;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.347);
+    padding: 1rem; /* Reduzindo o padding para telas pequenas */
+    margin: 0.5rem 0; /* Ajustando a margem */
+  }
+
+  #search,
+  #filter {
+    width: 100%; /* Ajustando o tamanho dos elementos de busca e filtro */
+    margin-right: 0; /* Removendo a margem direita */
+    margin-bottom: 1rem; /* Adicionando espaço entre os elementos */
+  }
+
+  #todo-list {
+    max-height: 150px; /* Reduzindo a altura máxima da lista */
+  }
+
+  .todo {
+    padding: 0.5rem; /* Reduzindo o espaçamento das tarefas */
+  }
+
+  .todo h3 {
+    font-size: 0.8rem; /* Reduzindo o tamanho do texto das tarefas */
   }
 }
 
-/* @media screen and (max-width: 432px) {
-  body {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #todo-form p,
-  #edit-form p {
-    margin-bottom: 0.3rem;
-  }
-  input {
-    padding: 0.2rem 0.7rem;
-  }
-
-
-  .containe-wheit {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    margin: auto 1rem;
-  }
-
-  .todo-container {
-    height: 100%;
-    margin: auto;
-  }
-} */
